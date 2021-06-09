@@ -4,12 +4,7 @@ version: 2.1
 
 jobs:
   # Below is the definition of your job to build and test your app, you can rename and customize it as you want.
-  environment: # environment variables for the build itself
-      TEST_RESULTS: /tmp/test-results # path to where test results will be saved
-
-    steps: # steps that comprise the `build` job
-      - checkout # check out source code to working directory
-      - run: mkdir -p $TEST_RESULTS # create the test results directory
+ 
   build-and-test:  
     # These next lines define a Docker executor: https://circleci.com/docs/2.0/executor-types/
     # You can specify an image from Dockerhub or use one of our Convenience Images from CircleCI's Developer Hub.
